@@ -1,0 +1,46 @@
+.mainLayout {
+  margin-left: var(--main-margin-lg);
+  margin-right: var(--main-margin-lg);
+}
+
+@media screen and (max-width: 575px) {
+  .mainLayout {
+    margin-left: var(--main-margin-xs);
+    margin-right: var(--main-margin-xs);
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .mainLayout {
+    margin-left: var(--main-margin-sm);
+    margin-right: var(--main-margin-sm);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .mainLayout {
+    margin-left: var(--main-margin-md);
+    margin-right: var(--main-margin-md);
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .mainLayout {
+    margin-left: var(--main-margin-lg);
+    margin-right: var(--main-margin-lg);
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .mainLayout {
+    margin-left: var(--main-margin-xl);
+    margin-right: var(--main-margin-xl);
+  }
+}
+
+@media screen and (min-width: 1401px) {
+  .mainLayout {
+    margin-left: var(--main-margin-xxl);
+    margin-right: var(--main-margin-xxl);
+  }
+}
