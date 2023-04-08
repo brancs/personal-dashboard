@@ -1,0 +1,50 @@
+.roundedChartsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.chartWrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr;
+}
+
+.chartContainer {
+  position: relative;
+}
+
+.chartMiddleText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.chartDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.chartDetails .description {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.chartDetails .time {
+  font-size: 14px;
+  color: var(--grey-300);
+}
+
+@media screen and (min-width: 993px) {
+  .roundedChartsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.25rem;
+  }
+}

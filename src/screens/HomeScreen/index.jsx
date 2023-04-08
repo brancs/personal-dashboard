@@ -1,11 +1,17 @@
 import Head from "next/head";
-import { CardsGrid, Card } from "@/components/Cards";
-import { Chart as ChartJS, registerables } from "chart.js";
-import { Bar } from "react-chartjs-2";
-
-ChartJS.register(...registerables);
+import Style from "./index.module.css";
+import Title from "@/components/Title";
+import CardScores from "./CardScores";
+import CardTimeline from "./CardTimeline";
 
 function index() {
+  const currentDate = new Date().toLocaleDateString("pt-br", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   return (
     <>
       <Head>
@@ -13,30 +19,13 @@ function index() {
         <meta name="description" content="Personal Dashboard" />
       </Head>
       <main>
-        <h1>Personal Dashboard</h1>
-        <CardsGrid>
-          <Card title={"Gráfico de barras"}>
-            <Bar
-              data={{
-                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-                datasets: [
-                  {
-                    label: "# of Votes",
-                    data: [12, 19, 3, 5, 2, 3],
-                    borderWidth: 1,
-                  },
-                ],
-              }}
-              options={{
-                scales: {
-                  y: {
-                    beginAtZero: true,
-                  },
-                },
-              }}
-            />
-          </Card>
-        </CardsGrid>
+        <div className={Style.generalGrid}>
+          <Title as={"h2"}>{currentDate}</Title>
+          <div className={Style.firstRow}>
+            <CardTimeline />
+            <CardScores />
+          </div>
+        </div>
       </main>
     </>
   );

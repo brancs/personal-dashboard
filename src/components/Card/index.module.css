@@ -1,8 +1,9 @@
 .card {
-  max-width: 50vw;
+  width: 100%;
   background-color: var(--grey-900);
   border: 2px solid var(--grey-700);
   border-radius: 0.25rem;
+  overflow: auto;
 }
 
 .cardTitle {

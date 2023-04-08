@@ -1,0 +1,29 @@
+.generalGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 3rem 1fr;
+}
+
+.firstRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .firstRow {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .firstRow {
+    grid-template-columns: 1.8fr 1.5fr;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .firstRow {
+    grid-template-columns: 2fr 1.2fr;
+  }
+}

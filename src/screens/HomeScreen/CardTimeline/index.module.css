@@ -1,0 +1,25 @@
+.chartContainer {
+  position: relative;
+  height: 60px;
+}
+
+.chartMiddleText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.chartDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.chartDetails .time {
+  color: var(--grey-300);
+}
