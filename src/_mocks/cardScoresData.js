@@ -1,3 +1,5 @@
+import Colors from "./colors";
+
 const chartSize = 60;
 const focusInSeconds = 29400;
 const meetingsInSeconds = 19800;
@@ -40,7 +42,7 @@ const dataFocus = {
     {
       label: "My Focus",
       data: [focusPercentage, 100 - focusPercentage],
-      backgroundColor: ["#7DE3F1", "#1c1b23"],
+      backgroundColor: [Colors.cyan500, Colors.grey700],
       ...chartsStyle,
     },
   ],
@@ -52,7 +54,7 @@ const dataMeetings = {
     {
       label: "My Meetings",
       data: [meetingsPercentage, 100 - meetingsPercentage],
-      backgroundColor: ["#E6BAEB", "#1c1b23"],
+      backgroundColor: [Colors.pink200, Colors.grey700],
       ...chartsStyle,
     },
   ],
@@ -64,7 +66,7 @@ const dataBreaks = {
     {
       label: "My Breaks",
       data: [breaksPercentage, 100 - breaksPercentage],
-      backgroundColor: ["#345179", "#1c1b23"],
+      backgroundColor: [Colors.blue600, Colors.grey700],
       ...chartsStyle,
     },
   ],
@@ -74,21 +76,21 @@ const data = [
   {
     id: 1,
     description: "focus",
-    time: "8h 10m",
+    time: "8hr 10min",
     chartData: dataFocus,
     count: focusPercentage,
   },
   {
     id: 2,
     description: "personal",
-    time: "5h 30m",
+    time: "5hr 30min",
     chartData: dataMeetings,
     count: meetingsPercentage,
   },
   {
     id: 3,
     description: "breaks",
-    time: "1h 20m",
+    time: "1hr 20min",
     chartData: dataBreaks,
     count: breaksPercentage,
   },

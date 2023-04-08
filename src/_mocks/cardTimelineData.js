@@ -1,4 +1,4 @@
-const today = new Date();
+import Colors from "./colors";
 
 function setTime(h = 0, m = 0) {
   const today = new Date();
@@ -22,8 +22,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#E6BAEB88",
-      borderColor: "#E6BAEB",
+      backgroundColor: Colors.pink200_50,
+      borderColor: Colors.pink200,
       borderWidth: 1,
     },
     {
@@ -34,8 +34,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#E6BAEB88",
-      borderColor: "#E6BAEB",
+      backgroundColor: Colors.pink200_50,
+      borderColor: Colors.pink200,
       borderWidth: 1,
     },
     {
@@ -46,8 +46,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#E6BAEB88",
-      borderColor: "#E6BAEB",
+      backgroundColor: Colors.pink200_50,
+      borderColor: Colors.pink200,
       borderWidth: 1,
     },
     {
@@ -58,8 +58,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#7DE3F188",
-      borderColor: "#7DE3F1",
+      backgroundColor: Colors.cyan500_50,
+      borderColor: Colors.cyan500,
       borderWidth: 1,
     },
     {
@@ -70,8 +70,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#34517988",
-      borderColor: "#345179",
+      backgroundColor: Colors.blue600_50,
+      borderColor: Colors.blue600,
       borderWidth: 1,
     },
     {
@@ -82,8 +82,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#7DE3F188",
-      borderColor: "#7DE3F1",
+      backgroundColor: Colors.cyan500_50,
+      borderColor: Colors.cyan500,
       borderWidth: 1,
     },
     {
@@ -94,8 +94,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#34517988",
-      borderColor: "#345179",
+      backgroundColor: Colors.blue600_50,
+      borderColor: Colors.blue600,
       borderWidth: 1,
     },
     {
@@ -106,8 +106,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#7DE3F188",
-      borderColor: "#7DE3F1",
+      backgroundColor: Colors.cyan500_50,
+      borderColor: Colors.cyan500,
       borderWidth: 1,
     },
     {
@@ -118,8 +118,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#34517988",
-      borderColor: "#345179",
+      backgroundColor: Colors.blue600_50,
+      borderColor: Colors.blue600,
       borderWidth: 1,
     },
     {
@@ -130,8 +130,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#7DE3F188",
-      borderColor: "#7DE3F1",
+      backgroundColor: Colors.cyan500_50,
+      borderColor: Colors.cyan500,
       borderWidth: 1,
     },
     {
@@ -142,8 +142,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#E6BAEB88",
-      borderColor: "#E6BAEB",
+      backgroundColor: Colors.pink200_50,
+      borderColor: Colors.pink200,
       borderWidth: 1,
     },
     {
@@ -154,8 +154,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#7DE3F188",
-      borderColor: "#7DE3F1",
+      backgroundColor: Colors.cyan500_50,
+      borderColor: Colors.cyan500,
       borderWidth: 1,
     },
     {
@@ -166,8 +166,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#E6BAEB88",
-      borderColor: "#E6BAEB",
+      backgroundColor: Colors.pink200_50,
+      borderColor: Colors.pink200,
       borderWidth: 1,
     },
     {
@@ -178,8 +178,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#E6BAEB88",
-      borderColor: "#E6BAEB",
+      backgroundColor: Colors.pink200_50,
+      borderColor: Colors.pink200,
       borderWidth: 1,
     },
     {
@@ -190,8 +190,8 @@ const data = {
           y: principalLabel,
         },
       ],
-      backgroundColor: "#E6BAEB88",
-      borderColor: "#E6BAEB",
+      backgroundColor: Colors.pink200_50,
+      borderColor: Colors.pink200,
       borderWidth: 1,
     },
   ],
@@ -219,7 +219,7 @@ const options = {
         callback: (text) =>
           `${new Date(text).toLocaleTimeString("pt-br", {
             hour: "numeric",
-          })}h`,
+          })}hr`,
       },
     },
     y: {
@@ -253,8 +253,6 @@ const options = {
               context.raw.x[1]
             )}`;
           }
-
-          console.log(context.raw.x[0]);
 
           return label;
         },

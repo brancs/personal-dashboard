@@ -7,6 +7,15 @@
   --grey-900: #121117;
   --grey-700: #1c1b23;
   --grey-300: #656468;
+
+  --pink-200: #e6baeb;
+  --pink-200-50: #e6baeb80;
+
+  --blue-600: #345179;
+  --blue-600-50: #34517980;
+
+  --cyan-500: #7de3f1;
+  --cyan-500-50: #7de3f180;
 }
 
 * {
@@ -25,4 +34,9 @@ body {
   background-color: var(--grey-900);
   font-family: var(--font-primary);
   color: var(--common-white);
+}
+
+.debug {
+  background-color: #e01f3d22;
+  border: 1px solid #e01f3d88;
 }

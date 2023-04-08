@@ -1,29 +1,52 @@
-.generalGrid {
+.mainGrid,
+.mainCols,
+.mainCol1,
+.subCol1,
+.subCol2 {
   display: grid;
+  grid-auto-rows: max-content;
   gap: 1rem;
+}
+
+.mainGrid {
   grid-template-rows: 3rem 1fr;
 }
 
-.firstRow {
-  display: grid;
+.mainCols {
   grid-template-columns: 1fr;
-  gap: 1rem;
+}
+
+.subCol1,
+.subCol2 {
+  grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  .firstRow {
+  .mainCols {
     grid-template-columns: 2fr 1fr;
+  }
+
+  .subCol1 {
+    grid-template-columns: 1fr;
   }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-  .firstRow {
+  .mainCols {
     grid-template-columns: 1.8fr 1.5fr;
+  }
+
+  .subCol1 {
+    grid-template-columns: 1fr;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .firstRow {
+  .mainCols {
     grid-template-columns: 2fr 1.2fr;
+  }
+
+  .subCol1 {
+    grid-template-columns: 1fr 1fr;
   }
 }
