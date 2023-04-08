@@ -1,4 +1,4 @@
-import Colors from "./colors";
+import Colors from "../styles/theme/colors";
 
 const chartSize = 60;
 const focusInSeconds = 29400;

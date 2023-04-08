@@ -1,4 +1,4 @@
-import Colors from "./colors";
+import { durationToHrAndMin } from "@/utils/formatDateAndTime";
 import { data as TimelineData } from "./cardTimelineData";
 
 const commonStyle = {
@@ -36,7 +36,7 @@ const data = TimelineData.datasets.map((set, index) => {
     minute: "numeric",
   });
   const dateDif = set.data[0].x[1] - set.data[0].x[0];
-  const durationString = minutesToHourAndMinutes(dateDif / 1000 / 60);
+  const durationString = durationToHrAndMin(dateDif / 1000 / 60);
 
   return {
     id: index,
@@ -50,15 +50,5 @@ const data = TimelineData.datasets.map((set, index) => {
     duration: { info: `${durationString}`, style: durationStyle },
   };
 });
-
-function minutesToHourAndMinutes(min) {
-  const hours = min / 60;
-  const roundHours = Math.floor(hours);
-  const minutes = (hours - roundHours) * 60;
-  const roundMinutes = Math.round(minutes);
-  const hoursText = roundHours > 0 ? `${roundHours}hr` : "";
-  const minutesText = roundMinutes > 0 ? `${roundMinutes}min` : "";
-  return `${hoursText} ${minutesText}`;
-}
 
 export { headers, data };

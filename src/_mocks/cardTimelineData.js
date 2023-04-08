@@ -1,4 +1,5 @@
-import Colors from "./colors";
+import { time2ToHourMinute } from "@/utils/formatDateAndTime";
+import Colors from "../styles/theme/colors";
 
 function setTime(h = 0, m = 0) {
   const today = new Date();
@@ -249,9 +250,9 @@ const options = {
           }
 
           if (context.raw.x.length > 0) {
-            label += `${formatDate(context.raw.x[0])}	– ${formatDate(
-              context.raw.x[1]
-            )}`;
+            label += `${time2ToHourMinute(
+              context.raw.x[0]
+            )}	– ${time2ToHourMinute(context.raw.x[1])}`;
           }
 
           return label;
@@ -260,12 +261,5 @@ const options = {
     },
   },
 };
-
-function formatDate(dateText) {
-  return dateText.toLocaleTimeString("pt-br", {
-    hour: "numeric",
-    minute: "numeric",
-  });
-}
 
 export { data, options };
