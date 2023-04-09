@@ -3,6 +3,10 @@
 This project recreates an image of a dashboard found on Instagram using Next.js
 [Link to reference](https://rize.io/)
 
+## Final result deployed at Vercel
+
+[Personal dashboard](https://personal-dashboard-blush.vercel.app/)
+
 ## Running the project
 
 First, install the project:
