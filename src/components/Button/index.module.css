@@ -1,10 +1,12 @@
 .button {
+  display: inline-flex;
   padding: 0.5rem 1rem;
   background-color: var(--grey-500);
   border: none;
   border: 1px solid var(--grey-500);
   border-radius: 100px;
   font-size: 0.875rem;
+  line-height: 1;
   color: var(--common-white);
   transition: all 0.25s ease-out;
 }
@@ -17,4 +19,32 @@
 
 .button:focus {
   outline-color: var(--common-white);
+}
+
+.button.primary {
+  background-color: var(--grey-500);
+  border-color: var(--grey-500);
+}
+
+.button.primary:hover {
+  background-color: var(--grey-400);
+  border-color: var(--grey-400);
+}
+
+.button.secondary {
+  background-color: var(--grey-700);
+  border-color: var(--grey-700);
+}
+
+.button.secondary:hover {
+  background-color: var(--grey-600);
+  border-color: var(--grey-600);
+}
+
+.roundStart {
+  border-radius: 20px 0 0 20px !important;
+}
+
+.roundEnd {
+  border-radius: 0 20px 20px 0 !important;
 }

@@ -9,6 +9,8 @@ import CardActivity from "./CardActivity";
 import CardProjects from "./CardProjects";
 import CardTimeBreakdown from "./CardTimeBreakdown";
 import CardWorkHours from "./CardWorkHours";
+import Button from "@/components/Button";
+import { CaretLeft, CaretRight } from "@phosphor-icons/react";
 
 function index() {
   const currentDate = new Date().toLocaleDateString("pt-br", {
@@ -26,7 +28,26 @@ function index() {
       </Head>
       <main>
         <div className={Style.mainGrid}>
-          <Title as={"h2"}>{currentDate}</Title>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <Title as={"h2"}>{currentDate}</Title>
+            <div style={{ display: "flex", gap: "2rem" }}>
+              <div>
+                <Button roundStart style={{ verticalAlign: "middle" }}>
+                  <CaretLeft size={14} weight="bold" />
+                </Button>
+                <span className={Style.customButton}>{"Calendar"}</span>
+                <Button roundEnd style={{ verticalAlign: "middle" }}>
+                  <CaretRight size={14} weight="bold" />
+                </Button>
+              </div>
+              <div>
+                <Button roundStart>Day</Button>
+                <Button variant="secondary" roundEnd>
+                  Week
+                </Button>
+              </div>
+            </div>
+          </div>
           <div className={`${Style.mainCols}`}>
             <div className={`${Style.mainCol1}`}>
               <CardTimeline />

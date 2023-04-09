@@ -1,0 +1,15 @@
+.mainHeader {
+  position: fixed;
+  width: 100%;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  background-color: #12111780;
+  border-bottom: 1px solid var(--grey-700);
+  font-size: 1.5rem;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}

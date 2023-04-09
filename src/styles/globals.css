@@ -5,10 +5,12 @@
   --common-white: #fff;
 
   --grey-900: #121117;
+  --grey-800: #15141b;
   --grey-700: #1c1b23;
-  --grey-600: #3d3b46;
+  --grey-600: #27262b;
   --grey-500: #585661;
-  --grey-300: #656468;
+  --grey-400: #626068;
+  --grey-300: #77757c;
 
   --pink-200: #e6baeb;
   --pink-200-50: #e6baeb80;
@@ -44,4 +46,26 @@ body {
 .debug {
   background-color: #e01f3d22;
   border: 1px solid #e01f3d88;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--grey-600) var(--grey-900);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--grey-900);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--grey-600);
+  border-radius: 8px;
+  border: 1px solid var(--grey-500);
 }

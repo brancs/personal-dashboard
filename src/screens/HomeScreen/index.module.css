@@ -33,6 +33,17 @@
   grid-template-rows: max-content 1fr;
 }
 
+.customButton {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5rem 1rem;
+  background-color: var(--grey-500);
+  border: none;
+  border: 1px solid var(--grey-500);
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .mainCols {
     grid-template-columns: 2fr 1fr;
