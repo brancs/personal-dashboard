@@ -1,6 +1,7 @@
 # Personal Dashboard
 
 This project recreates an image of a dashboard found on Instagram using Next.js
+[Link to reference](https://rize.io/)
 
 ## Running the project
 
