@@ -1,0 +1,20 @@
+.button {
+  padding: 0.5rem 1rem;
+  background-color: var(--grey-500);
+  border: none;
+  border: 1px solid var(--grey-500);
+  border-radius: 100px;
+  font-size: 0.875rem;
+  color: var(--common-white);
+  transition: all 0.25s ease-out;
+}
+
+.button:hover {
+  background-color: var(--grey-600);
+  border-color: var(--grey-600);
+  cursor: pointer;
+}
+
+.button:focus {
+  outline-color: var(--common-white);
+}

@@ -1,0 +1,31 @@
+.mainGrid {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 0.5rem;
+}
+
+.mainCol {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.subCol {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.mainText {
+  display: block;
+  font-size: 2rem;
+}
+
+.subText {
+  display: block;
+  font-size: 1.125rem;
+}
+
+.smallText {
+  font-size: 0.875rem;
+  color: var(--grey-300);
+}

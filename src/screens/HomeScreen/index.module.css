@@ -1,10 +1,10 @@
 .mainGrid,
 .mainCols,
 .mainCol1,
+.mainCol2,
 .subCol1,
 .subCol2 {
   display: grid;
-  grid-auto-rows: max-content;
   gap: 1rem;
 }
 
@@ -16,9 +16,21 @@
   grid-template-columns: 1fr;
 }
 
+.mainCol1 {
+  grid-template-rows: max-content 1fr;
+}
+
+.mainCol2 {
+  grid-template-rows: max-content max-content 1fr;
+}
+
 .subCol1,
 .subCol2 {
   grid-template-columns: 1fr;
+}
+
+.subCol2 {
+  grid-template-rows: max-content 1fr;
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {

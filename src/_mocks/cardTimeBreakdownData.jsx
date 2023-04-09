@@ -41,15 +41,14 @@ const descriptions = [
   "Festas",
   "Outros",
 ];
+const percents = [23, 46, 66, 23, 52, 72, 11];
+const durations = [1121, 312, 732, 411, 643, 11, 32];
 
 const data = descriptions.map((desc, index) => {
-  const randPercent = Math.floor(Math.random() * 101);
-  const randDuration = Math.floor(Math.random() * 1441);
-
   return {
     id: index,
     percentage: {
-      info: `${randPercent}%`,
+      info: `${percents[index]}%`,
       style: percentageStyle,
     },
     description: {
@@ -58,12 +57,16 @@ const data = descriptions.map((desc, index) => {
     },
     progress: {
       info: (
-        <progress value={randPercent} max={100} className={Style.progressBar} />
+        <progress
+          value={percents[index]}
+          max={100}
+          className={Style.progressBar}
+        />
       ),
       style: progStyle,
     },
     duration: {
-      info: durationToHrAndMin(randDuration),
+      info: durationToHrAndMin(durations[index]),
       style: durStyle,
     },
   };

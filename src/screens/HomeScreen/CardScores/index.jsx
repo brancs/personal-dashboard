@@ -10,6 +10,7 @@ function CardScores() {
   return (
     <Card
       title={"Scores"}
+      style={{ height: "max-content" }}
       bodyStyle={{
         display: "flex",
         alignItems: "center",

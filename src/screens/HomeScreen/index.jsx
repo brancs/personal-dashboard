@@ -31,17 +31,17 @@ function index() {
             <div className={`${Style.mainCol1}`}>
               <CardTimeline />
               <div className={`${Style.subCol1}`}>
-                <div className={`${Style.subCol2} debug`}>
+                <div className={`${Style.subCol2}`}>
                   <CardBreakTimer />
                   <CardActivity />
                 </div>
-                <div className={`${Style.subCol2} debug`}>
+                <div className={`${Style.subCol2}`}>
                   <CardWorkblocks />
                   <CardProjects />
                 </div>
               </div>
             </div>
-            <div className={`${Style.mainCol1}`}>
+            <div className={`${Style.mainCol2}`}>
               <CardWorkHours />
               <CardScores />
               <CardTimeBreakdown />

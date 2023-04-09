@@ -42,7 +42,7 @@ const data = TimelineData.datasets.map((set, index) => {
     id: index,
     block: (
       <div
-        style={{ ...commonDetailStyle, backgroundColor: set.borderColor }}
+        style={{ ...commonDetailStyle, backgroundColor: set.backgroundColor }}
       ></div>
     ),
     time: { info: formatTime, style: timeStyle },

@@ -5,6 +5,8 @@ const common = {
 
 const grey = {
   grey300: "#656468",
+  grey500: "#3D3B46",
+  grey600: "#585661",
   grey700: "#1c1b23",
   grey900: "#121117",
 };
